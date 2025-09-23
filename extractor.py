@@ -63,7 +63,7 @@ def process_file(filename):
 
 
 def demo():
-    """Run the demo extraction process using a provided or the default file."""
+    """Run the demo extraction process using a provided file or the default file."""
     import sys
     
     # Checks if user provides filename as command line argument, then uses it
@@ -71,7 +71,7 @@ def demo():
         filename = sys.argv[1]
     else:
         # Otherwise, prompts user for filename if not provided use the default: sample_data.txt
-        filename = input("Enter filename (or press Enter for 'sample_data.txt'): ").strip()
+        filename = input("Enter a filename (or press Enter for 'sample_data.txt'): ").strip()
         if not filename:
             filename = 'sample_data.txt'
     
@@ -83,7 +83,7 @@ def demo():
     
     # Print results in a readable format
     print("EXTRACTION RESULTS")
-    # Print 40 equal to signs 
+    # Print 40 equal to signs for decoration
     print("=" * 40)
     
     categories = [
