@@ -125,7 +125,7 @@ Price: $19.99, $1,299.50, $49.95"""
 
 
 if __name__ == "__main__":
-    # If no sample file exists, create one automatically
+    # If no sample file exists, create one 
     import os
     if not os.path.exists('sample_data.txt'):
         create_sample_file()
